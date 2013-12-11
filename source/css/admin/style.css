@@ -1,0 +1,429 @@
+html, body, #page {
+	height: 100%;
+	min-width: 750px !important;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	/*background-color: #3E3830;*/
+	background-color: #fff;
+	color: #333;
+}
+
+body, td, .field, .button, select {
+	font: 11px/14px Tahoma, Arial, Verdana, Helvetica, sans-serif;
+}
+
+a {
+	color: #4369AC;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img, object {
+	border-width: 0;
+}
+
+.inline img, .inline input {
+	display: inline;
+	vertical-align: middle;
+}
+
+h2 {
+	margin: 10px 0 7px;
+	font: normal 20px Tahoma, Arial, Verdana, Helvetica, sans-serif;
+}
+
+#header {
+	height: 35px;
+	background-color: #000;
+}
+
+#header, #header a {
+	color: #FFF;
+}
+
+#header a {
+	padding-left: 22px;
+}
+
+#header span {
+	padding-left: 33.5%;
+	color: #F75C26;
+}
+
+#header div {
+	position: absolute;
+	right: 1%;
+	top: 10px;
+	margin-right: 25px;
+	text-align: right;
+}
+
+#header div a {
+	color: #F75C26;
+}
+
+#page {
+	width: 100%;
+	height: 100%;
+	background: #E9E8E5 url(/source/images/admin/menu_bg.gif) repeat-y;
+}
+
+#menu {
+	width: 220px;
+	background: url(/source/images/admin/bg_menu_div.gif) repeat-x;
+	border-right: 1px solid #CCC;
+	padding-top: 18px;
+	vertical-align: top;
+}
+
+#menu dl {
+	margin: 0;
+	border: 1px solid #C8C7C7;
+	border-bottom-width: 0;
+	width: 181px;
+	padding: 0;
+}
+
+#menu dl dl {
+	margin-bottom: -1px;
+	margin-left: -36px;
+}
+
+#menu dl dl dd {
+	background-image: url(/source/images/admin/bg_sitem.gif);
+}
+
+#menu dl dd {
+	background: url(/source/images/admin/bg_mitem.gif) no-repeat;
+	line-height: 30px;
+	border-bottom: 1px solid #C8C7C7;
+	width: 147px;
+	padding-left: 35px;
+	margin: 0;
+}
+
+* html #menu dl dd {
+	width: 181px;
+}
+
+#menu dl dd#activeItem {
+	background: url(/source/images/admin/bg_mitem_a.gif) no-repeat;
+}
+
+#menu img, #menu dl {
+	margin-left: 19px;
+}
+
+#menu dl a {
+	color: #333;
+}
+
+#copy {
+	padding: 20px 30px;
+	font-size: 10px;
+	color: #888;
+	line-height: 100%;
+	width: 160px;
+	border-right: 1px solid #CCC;
+	vertical-align: bottom;
+}
+
+#copy a {
+	color: #888;
+	text-decoration: underline;
+}
+
+#copy a:hover {
+	text-decoration: none;
+}
+
+#content {
+	background: url(/source/images/admin/bg_main.gif) repeat-x;
+	padding: 19px 22px;
+	vertical-align: top;
+	width: 1000px;
+}
+
+#back {
+	margin-top: 3px;
+}
+
+#back img {
+	margin: -3px 0 0 -1px;
+}
+
+#back a {
+	margin-right: 8px;
+}
+
+#content table {
+	border-left: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	border-left-width: 1px;
+	width: 100%;
+	background: #FFF url(/source/images/admin/bg_thead.gif) repeat-x;
+}
+
+#content table tfoot {
+	border-bottom: 1px solid #CCC;
+}
+
+#content table td {
+	border-top: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	height: 27px;
+	padding: 0 15px 0 15px;
+}
+
+#content table td.centred {
+	text-align: center;
+}
+
+#content table td table td {
+	border-left-width: 0;
+}
+
+#content table thead td {
+	//border-bottom: 1px solid #CCC;
+}
+
+#content table thead {
+	background-image: url(/source/images/admin/bg_thead.gif);
+}
+
+#content table thead input, #content table thead select {
+	width: 100%;
+}
+
+#content table thead tr.thead td {
+	height: 45px;
+}
+
+#content table thead tr.thead td#order_asc {
+	background: url(/source/images/admin/bg_thead_a.gif) no-repeat top right;
+}
+
+#content table thead tr.thead td#order_desc {
+	background: url(/source/images/admin/bg_thead_d.gif) no-repeat top right;
+}
+
+#content table tfoot td {
+	//border-top: 1px solid #CCC;
+	background: url(/source/images/admin/bg_tfoot.gif);
+	height: 27px;
+}
+
+#content table tfoot td div {
+	float: left;
+	line-height: 27px;
+}
+
+#content .tbody table {
+	margin: 12px 0 11px;
+}
+
+.field {
+	//border: 1px solid #777;
+}
+
+.disabled {
+	background: #f5f5f5;
+	color: #555;
+}
+
+.button {
+	background: url(/source/images/admin/bg_but.gif);
+	border: 1px solid #A1A0A0;
+	font-weight: bold;
+	color: #387591;
+	height: 22px;
+	padding: 0 10px;
+	margin: 5px 0;
+}
+
+.ok, .error {
+	vertical-align: top;
+	font-weight: bold;
+	margin: 0 0 10px;
+	padding: 2px 10px 5px 25px;
+}
+
+.error {
+	color: #C00;
+	background: transparent url(/source/images/admin/er.gif) top left no-repeat;
+}
+
+.ok {
+	color: #468749;
+	background: transparent url(/source/images/admin/ok.gif) top left no-repeat;
+}
+
+textarea {
+	margin: 4px 0;
+	overflow: auto;
+}
+form {
+	margin: 0;
+}
+
+input[type="checkbox"] {
+	vertical-align: middle;
+	margin-top: -1px;
+}
+
+/*.png {
+	behavior: url(/scripts/png.htc);
+}*/
+
+.collapse {
+	float: right;
+	cursor: pointer;
+	margin: -21px 10px 0 0;
+}
+
+* html .collapse {
+	margin-right: 5px !important;
+}
+
+#content ul {
+	margin: 0 15px;
+	padding: 0;
+	line-height: 18px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* by project */
+
+#langs {
+	padding-bottom: 16px;
+}
+
+#langs strong {
+	padding: 3px 8px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+* html #langs strong {
+	padding: 2px 8px 4px;
+}
+
+.lang {
+	cursor: pointer;
+	border: 1px solid #DDD;
+	background-color: #F2F0EC;
+}
+
+.lang-on {
+	color: #D00;
+	border: 1px solid #CCC;
+	background-color: #E2E0DC;
+}
+
+.lang-hide, .col-hide {
+	display: none;
+}
+
+.lang-show, .col-show {
+	display: block;
+}
+
+#right-frm {
+	margin-top: 5px;
+}
+
+.gallery-imgs .scroll {
+	white-space: nowrap;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 135px;
+	margin-top: 10px;
+}
+
+.gallery-imgs div div img {
+	float: left;
+	display: inline;
+	vertical-align: middle;
+	margin: 0 10px 10px 0;
+}
+
+.gallery-imgs div div div img {
+	float: none;
+	margin: -4px 0 0;
+}
+
+.gallery-imgs div div div {
+	padding-top: 20px;
+}
+
+.gallery-full .scroll {
+	height: 500px;
+}
+
+.gallery-full div div div {
+	padding-top: 5px;
+}
+
+/* PROJECT */
+input {
+	padding-left: 1px;
+}
+
+input.dollar {
+	padding-left: 8px;
+	background: #fff url(/content/text/dollar.gif) no-repeat 1px center;
+	width: 92px!important;
+}
+
+input.percent {
+	padding-left: 12px;
+	background: #fff url(/content/text/percent.gif) no-repeat 1px center;
+	width: 88px!important;
+}
+
+table .inline input.dollar {
+	width: 95%!important;
+}
+
+.right {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pseudo-link{border-bottom:1px dashed;cursor:pointer;cursor:hand; color:#4369AC;}
+
+.hidden{display:none}
+
+.add-fields {padding: 5px 10px 10px 0;}
+.add-fields-sub {padding: 4px 10px 4px 20px;}

@@ -1,0 +1,68 @@
+
+<div id="order_status" class="content">
+  <div class="row">
+    <div id="status-search-form" class="col-xs-12">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Order Status Lookup</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <input id="status-search" type="text" class="form-control"/>
+        </div>
+      </div>
+      <div class="row">   
+        <div class="col-xs-12"><a id="status-search-btn" class="btn btn-default">Search</a></div>
+      </div>
+    </div>
+  </div>
+  <div id="results">{{#each data}}
+    <div class="row">
+      <div class="col-xs-12"> 
+        <h2>{{{job_name}}}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p>info: {{{job_info}}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p>id: {{{job_id}}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p>po: {{{job_po}}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p>rep: {{{job_rep}}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p>so: {{{job_so}}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p>carrier: {{{job_carrier}}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p>start: {{{job_start_date}}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p>end: {{{job_end_date}}}</p>
+      </div>
+    </div>
+    <hr/>{{/each}}
+  </div>
+</div>

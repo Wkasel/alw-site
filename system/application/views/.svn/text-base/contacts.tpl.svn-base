@@ -1,0 +1,101 @@
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=en&key=ABQIAAAArTkkrqs2eLg8eXUGtK5QahSay5tWU_zO5C77oVCdJ1VAFxGo1RTNcjcB5bgbE-bGx8rShR69Uo5VAA"></script>
+<script type="text/javascript">
+{literal}
+	geocoder = new google.maps.Geocoder();
+
+	function init() {
+		geocoder.geocode( { 'address': '3179 Diablo Avenue Hayward, California 94545'}, function(results, status) {
+	    	if (status == google.maps.GeocoderStatus.OK) {
+	      		var latlng = new google.maps.LatLng(results[0].geometry.location.b, results[0].geometry.location.c);
+			   	 	var myOptions = {
+					zoom: 15,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+			    }
+		    	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		    	marker = new google.maps.Marker({
+	          		map: map, 
+	          		position: results[0].geometry.location
+	      		});
+	      		map.setCenter(results[0].geometry.location);
+	    	}
+	    });
+	}
+	
+   
+
+	function getPoint(point, div) {
+		if (geocoder) {
+			geocoder.geocode( { 'address': point}, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					marker = new google.maps.Marker({
+						map: map, 
+						position: results[0].geometry.location
+					});
+					map.setCenter(results[0].geometry.location);
+				}
+			});
+		}
+		$(".adr div").removeAttr("class");
+		$(div).addClass("active");
+    }
+{/literal}
+</script>
+<div class="clearfix">
+							<div class="map_canvas" id="map_canvas"></div>
+							<div class="addrs">
+								<div class="adr">
+									<div class="active" onclick="getPoint('3179 Diablo Avenue Hayward, California 94545', this)">
+										<h1>UNITED STATES</h1>
+										<p>
+											3179 Diablo Avenue <br />
+											Hayward, CA 94545<br />
+											(510) 732-1794 (PH)<br />
+											(650) 249-0412 (FX)
+										</p>
+										<a target="blank" href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=3179+Diablo+Avenue+Hayward,+California+94545&sll=51.528424,-0.253458&sspn=0.011374,0.042272&ie=UTF8&hq=&hnear=3179+Diablo+Ave,+Hayward,+Alameda,+California+94545&z=16"><img src="/source/images/arr2.gif" alt="" />Google Maps</a>
+										<img class="arr" src="/source/images/adr_arr.png" alt="" />
+									</div>
+								</div>
+								<div class="adr">
+									<div onclick="getPoint('Unit 20 park royal road 7-19 London NW10 7LQ', this)">
+										<h1>International</h1>
+										<p>
+											Unit 20 Park Royal Road<br />
+											Business Centre 7-19 & 19-20<br />
+											London, NW10 7LQ<br />
+											0782868423
+										</p>
+										<a target="blank" href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Unit+20+park+royal+road+7-19+London+NW10+7LQ&sll=41.763117,-78.33252&sspn=3.490856,10.821533&ie=UTF8&hq=&hnear=Chase+Road+Trading+Estate,+51+Chase+Rd,+London+NW10+6LG,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5+%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D0%B5%D0%B2%D1%81%D1%82%D0%B2%D0%BE&ll=51.528424,-0.253458&spn=0.011374,0.042272&z=15&iwloc=A"><img src="/source/images/arr2.gif" alt="" />Google Maps</a>
+										<img class="arr" src="/source/images/adr_arr.png" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+<div class="contact_us clearfix"> <!-- contact us -->
+
+
+	<h1>Interested in a Catalog?</h1>
+	<a href="mailto:shira@archltgworks.com" class="btn">
+		CONTACT US
+	</a>
+	{foreach name=user from=$team item=node}
+	<div class="user clearfix {if $smarty.foreach.user.iteration%2==0}odd{/if}">
+		<img src="/source/images/team/{$node->t_image}" width="154" height="128" alt="" />
+		<div class="data">
+			<h2>{$node->t_name}</h2>
+
+			<h3>{$node->t_position}</h3>
+			<p>
+				{$node->t_phone} (Ph) <br />
+				{$node->t_fax} (FX)
+			</p>
+			<a href="mailto:{$node->t_email}">{$node->t_email}</a>
+		</div>
+	</div>
+	{/foreach}
+</div>
+<br /><br />
+<script type="text/javascript">
+init();
+</script>

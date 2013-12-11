@@ -1,0 +1,20 @@
+	<!-- products -->
+		<div class="products clearfix">
+		{foreach from=$pom item=node}
+		<div class="prod">
+		<a href="{$node->pom_link}">
+			<img src="/source/images/product_on_main/{$node->image}" alt="" />
+		</a>
+		<br /><a href="{$node->pom_link}">{$node->pom_name}</a></div>
+		{/foreach}
+		
+			<div class="about_alw">
+				<img class="h" src="/source/images/about-alw.jpg" alt="" />
+				<p class="text">{$about->pages_content|truncate:300}</p><br />
+				<a href="/content/pages/about/">
+				<img class="more" src="/source/images/read-more.jpg" alt=""  class="more" />
+				</a>
+			</div>
+		</div>
+	<!-- end products -->
+<!-- end main page -->

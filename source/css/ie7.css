@@ -1,0 +1,4 @@
+.clearfix { display:inline-block;}
+.nav form div label { margin:0 7px 0 0;}
+.passhide { position:relative; left:-4px;}
+.products_category .prods div .q { filter:alpha(opacity = 50);}

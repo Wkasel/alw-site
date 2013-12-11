@@ -1,0 +1,4 @@
+<div style="margin-top:10px; margin-bottom:10px; margin-left:10px; color:#FFF;"> 
+<h2 style="margin-bottom:9px; color:#ed1c22;">{$content.title}</h2>
+{$content.content}
+</div>

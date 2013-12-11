@@ -1,0 +1,8 @@
+.row#all-products
+    {{#each data}}
+    div.product-category(style="background:url('http://www.archltgworks.com/source/images/cats/{{pc_image}}');", data-cat="{{pc_name}}")
+        div.product-caption
+            h4 {{pc_name}}
+
+    {{/each}}
+

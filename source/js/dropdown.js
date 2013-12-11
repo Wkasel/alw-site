@@ -1,0 +1,1 @@
+jQuery.fn.dropdown = function(){jQuery('ul > li', this).css({'position':'relative'});jQuery('ul > li ul', this).css({display:'none', position:'absolute', top:'100%', left:0});jQuery('ul > li ul li ul', this).css({'top':0, 'left':'100%'});jQuery('ul li', this).hover(function(){$('ul', this).eq(0).slideDown(250);},function(){$('ul', this).eq(0).slideUp(250);});};

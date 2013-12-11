@@ -1,0 +1,30 @@
+ol.carousel-indicators
+    {{#each data}}
+    {{#if @index}}
+    li(data-target='#home-carousel', data-slide-to='{{@index}}')
+    {{else}}
+    li.active(data-target='#home-carousel', data-slide-to='{{@index}}')
+    {{/if}}
+    {{/each}}
+
+
+
+.carousel-inner
+    {{#each data}}
+    {{#if @index}}
+    .item
+        div.image(style="background:url('resources/images/{{image}}'); background-size: 100%; background-position: center center;", data-href="/products/product/{{product_id}}")
+        .carousel-caption {{job_location}}
+    {{else}}
+    .item.active
+        div.image(style="background:url('resources/images/{{image}}'); background-size: 100%; background-position: center center;", data-href="/products/product/{{product_id}}")
+        .carousel-caption {{job_location}}
+    {{/if}}
+  
+    {{/each}}
+
+a.left.carousel-control(href='#home-carousel', data-slide='prev')
+    span.icon-prev
+a.right.carousel-control(href='#home-carousel', data-slide='next')
+    span.icon-next
+

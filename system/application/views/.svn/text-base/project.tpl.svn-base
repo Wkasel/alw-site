@@ -1,0 +1,51 @@
+<link href="/source/css/form.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/source/js/niceform.js"></script>
+<script type="text/javascript">
+{literal}
+function getFile() {
+	var file = $('select[@name=links] option:selected').val();
+	if (file) {
+		window.location = '/content/get_file/?file=' + file;
+	}
+}
+$(function(){
+	$("#project_slider").slider({w:451,h:450});
+});
+{/literal}
+</script>
+<div class="bread"> <!-- bread crumbs -->
+	<a href="/content/products/" style="color:#FFF;">FEATURED PRODUCTS</a> / {$product->p_name}
+</div> <!-- end bread crumbs -->
+<div class="clearfix">
+	<div class="phots">
+
+		<div id="project_slider" class="slider">
+			<div class="prev">
+				{foreach from=$product->reversed_images name=images item=node}
+				<img src="/source/images/site_images/{$node}" />
+				{/foreach}
+			</div>
+			<div class="checker clearix">
+				<div class="btns">
+					<ul class="clearix">
+						{foreach from=$product->reversed_images name=images item=node}
+						<li><a href="#"></a></li>
+						{/foreach}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="descr clearfix">
+		<h1>{$product->p_name}</h1>
+		<h2>{$product->p_name_ex}</h2>
+		<p>
+		<b>Series:</b> {$product->p_series}<br />
+		<b>Specifier:</b> {$product->p_spec}<br />
+		<b>Location:</b> {$product->p_location}</p>
+		<br />
+		{$product->p_desc}
+		<br />
+	</div>
+
+</div>

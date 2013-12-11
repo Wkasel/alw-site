@@ -1,0 +1,13 @@
+#contact-us
+    {{#each data.usa}}
+    .row
+        .contact
+            span 
+                img(src="http://www.archltgworks.com/source/images/team/{{t_image}}")
+            span {{t_name}}
+            span {{{t_position}}}
+            span {{t_phone}} (Ph)
+            span {{t_fax}} (FX)
+            span 
+                a(href="mailto:{{t_email}}") Email {{name}}
+    {{/each}}

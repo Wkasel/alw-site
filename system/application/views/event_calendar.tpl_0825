@@ -1,0 +1,7 @@
+<div style="color:#FFF;padding: 2em; line-height: 2em;">
+	{foreach from=$event item=event}
+	<div style="font-size:14px;">
+		{$event->event_calendar_content}
+	</div>
+	{/foreach}
+</div>

@@ -1,0 +1,28 @@
+ol.carousel-indicators
+  {{#each images}}
+  {{#if @index}}
+  li(data-target='#product-carousel', data-slide-to='{{@index}}')
+  {{else}}
+  li.active(data-target='#product-carousel', data-slide-to='{{@index}}')
+  {{/if}}
+  {{/each}}
+
+
+
+.carousel-inner
+  {{#each images}}
+  {{#if @index}}
+  .item
+      div.image(style="background:url('http://www.archltgworks.com/source/images/site_images/{{this}}'); background-size: cover; background-position: center center;")
+  {{else}}
+  .item.active
+      div.image(style="background:url('http://www.archltgworks.com/source/images/site_images/{{this}}'); background-size: cover; background-position: center center;")
+  {{/if}}
+
+  {{/each}}
+
+a.left.carousel-control(href='#product-carousel', data-slide='prev')
+  span.icon-prev
+a.right.carousel-control(href='#product-carousel', data-slide='next')
+  span.icon-next
+  

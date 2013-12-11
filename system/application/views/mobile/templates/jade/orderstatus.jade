@@ -1,0 +1,43 @@
+#order_status.content
+    .row
+        .col-xs-12#status-search-form
+            .row
+                .col-xs-12
+                    h2 Order Status Lookup
+            .row
+                .col-xs-12
+                    input.form-control#status-search(type="text")
+            .row    
+                .col-xs-12
+                    a.btn.btn-default(id="status-search-btn") Search
+    #results
+        {{#each data}}
+        .row
+            .col-xs-12 
+                h2 {{{job_name}}}
+        .row
+            .col-xs-12
+                p info: {{{job_info}}}
+        .row
+            .col-xs-12
+                p id: {{{job_id}}}
+        .row
+            .col-xs-12
+                p po: {{{job_po}}}
+        .row
+            .col-xs-12
+                p rep: {{{job_rep}}}
+        .row
+            .col-xs-12
+                p so: {{{job_so}}}
+        .row
+            .col-xs-12
+                p carrier: {{{job_carrier}}}
+        .row
+            .col-xs-12
+                p start: {{{job_start_date}}}
+        .row
+            .col-xs-12
+                p end: {{{job_end_date}}}
+        hr
+        {{/each}}

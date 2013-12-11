@@ -1,0 +1,1 @@
+<br /><a href="LINK" target="_blank"><img src="SRC" wspace="20" style="max-height:WIDTHpx; max-height:HEIGHTpx;" /></a>

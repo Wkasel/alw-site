@@ -1,0 +1,8 @@
+.row#all-products
+    {{#each data}}
+    div.product-category(style="background:url('http://archltgworks.com/source/images/site_images/preview/{{p_image1}}'); background-size: cover;", data-id="{{products_id}}")
+        div.product-caption
+            h4 {{p_name}}
+
+    {{/each}}
+

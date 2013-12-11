@@ -1,0 +1,58 @@
+<script language="javascript" type="text/javascript" src="/source/js/nf.js"></script>
+<script type="text/javascript">
+{literal}
+function getFile() {
+	var file = $('select[@name=links] option:selected').val();
+	if (file) {
+		window.location = '/content/get_file/?file=' + file;
+	}
+}
+	$(function(){
+		$("#slider_on_featured").slider({w:451,h:450});
+	});
+{/literal}
+</script>
+<div class="bread"> <!-- bread crumbs -->
+	<a href="/content/products/" style="color:#FFF;">FEATURED PRODUCTS</a> / {$product->p_name}
+</div> <!-- end bread crumbs -->
+<div class="clearfix">
+	<div class="phots">
+
+		<div id="slider_on_featured" class="slider">
+			<div class="prev">
+				{foreach from=$product->reversed_images name=images item=node}
+				<img src="/source/images/site_images/{$node}" alt="" />
+				{/foreach}
+			</div>
+			<div class="checker clearix">
+				<div class="btns">
+					<ul class="clearix">
+					{foreach from=$product->reversed_images name=images item=node}
+					<li><a href="#"></a></li>
+					{/foreach}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="descr clearfix">
+		<h1>{$product->p_name}</h1>
+		<h2>{$product->p_name_ex}</h2>
+		<p>{$product->p_desc}</p>
+		<br />
+		<a class="pdf" href="/source/files/main_files/{$product->p_download}" target="_blank">DOWNLOAD SPEC SHEET</a>
+		<a class="btn" href="/source/files/main_files/{$product->p_install}" target="_blank">INSTALLATION INSTRUCTIONS</a>
+		<form action="" method="post">
+			<div>
+				<select class="styled" name="asd" id="link">
+					<option value="">PHOTOMETRY LINK</option>
+					{foreach from=$files item=node}
+					<option value="{$node->file_name}">{$node->file_desc}</option>
+					{/foreach}
+				</select>
+			</div>
+		</form>
+		<a class="arr" onclick="getFile(); return false;" href="#"><img src="/source/images/arr.gif" alt="" /></a>
+	</div>
+
+</div>

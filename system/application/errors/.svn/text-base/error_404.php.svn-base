@@ -1,0 +1,7 @@
+<?php
+header('Content-Type: text/html; charset=utf-8');
+?>
+<script type="text/javascript">
+window.setTimeout('window.location = "/"', 3000);
+</script>
+Sorry the page you requested cannot be found. You will be redirected in 3 seconds.

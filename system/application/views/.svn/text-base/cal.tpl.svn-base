@@ -1,0 +1,91 @@
+<link href="/source/css/ui/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/source/js/accord.js"></script>
+<script type="text/javascript" src="/source/js/jquery.ui.core.js"></script>
+<script type="text/javascript">
+{literal}
+		$(function(){
+		$('.accord > ul').accordion();
+		
+});
+
+function goOut() {
+	value = $('#calc_form').val();
+	window.location = '/static/' + value;
+}
+		
+{/literal}
+</script>
+<div class="rep_content_page clearfix"> <!-- rep content page -->
+							<div class="left_side"> <!-- left side of rep content -->
+		<div class="content_name">Rep Content</div>
+		<div class="accord">
+			<ul>
+				<li><span><a href="/content/rep_area/job_status/">Order Status</a></span></li>
+				<li> <span><a href="/content/rep_area/email/">Spec Registration</a></span></li>
+				<li> <span><a href="/content/rep_area/calc/" class="active">Pricing (Calculators)</a></span></li>
+				{foreach from=$nav item=node}
+				<li {if $article->ra_cat eq $node->reps_cats_id} class="selected_class"{/if}> <span>{$node->rc_name}</span>
+					<ul>
+						{foreach from=$node->items item=subnode}
+							<li><a href="/content/rep_area/article/{$subnode->reps_articles_id}/"{if $subnode->reps_articles_id eq $art_id} class="selected"{/if}>{$subnode->ra_name}</a></li>
+						{/foreach}
+					</ul>
+				</li>
+				{/foreach}
+			</ul>
+
+		</div>
+	</div> <!-- end left side of rep content -->
+	<div class="right_side"> <!-- right side of rep content -->
+		
+		<div class="find_res" style="margin-left:10px;">
+		<h3>Select Product Category Below:</h3>
+			<form name="form1" class="dsR80 dsR778">
+								<select onchange="goOut();" size="1" name="select1" class="dsR725" id="calc_form">
+									<option selected="selected" value="2009_Pricing_Calculators/LINEAR_LIGHTPLANE_CALCULATOR_2009.htm">Lightplane Linear (LPL)</option>
+                                    <option value="2009_Pricing_Calculators/LINEAR_LIGHTPLANE_CALCULATOR_2009.htm">Lightplane Linear Wall (WLP)</option>
+                                  <option value="2009_Pricing_Calculators/TRIPLANE_CALCULATOR_2009.htm">Triplane (TRP)</option>
+                                  <option value="2009_Pricing_Calculators/LINEAR_LIGHTPLANE_UP_UNDER_CALCULATOR.htm">Lightplane Up and Under (LPLUU)</option>
+                                  <option value="2009_Pricing_Calculators/Wall_Grazer.htm">Lightplane Wall Grazer (LPWG)</option> 
+                                  <option value="2009_Pricing_Calculators/LIGHTPLANE_ROUND_SUSP_CALCULATOR_2009.htm">Lightplane Round - Suspended (LPR)</option>
+<option value="2009_Pricing_Calculators/LIGHTPLANE_ROUND_WALL_CALCULATOR_2009.htm">Lightplane Round - Wall (LPR)</option>
+
+									<option value="2009_Pricing_Calculators/LINEAR_LADDER_CALCULATOR_2009.htm">Ladder (LDC/LDW)</option>
+									<option value="2009_Pricing_Calculators/FIVEBOW_CALCULATOR_2009.htm">Five/Eight Bow (FB)</option>
+
+									<option value="2009_Pricing_Calculators/LIGHTBAR_CALCULATOR_2009.htm">LP Lightbar (LPLB)</option>
+                                  <option value="2009_Pricing_Calculators/LIGHTPLANE_9_CALCULATOR_2009.htm">Lightplane 9 (LP9)</option>
+	
+        						    <option value="2009_Pricing_Calculators/LP11_CALCULATOR_2009.htm">Lightplane 11 (LP11)</option>
+                                    
+								  <option value="2009_Pricing_Calculators/LP15_CALCULATOR_2009.htm">Lightplane 15 (LP15)</option>
+                                    
+<option value="PRICING_CALCULATORS/LPCPcalc.htm">Ceiling Panel System (LPCS)</option>
+									<option value="2009_Pricing_Calculators/CAS_FIXTURE_CALCULATOR_2009.htm">CAS (CAS)</option>
+									<option value="2009_Pricing_Calculators/LP_MONOPOINTS_2009.htm">LP Mono (LPM)</option>
+
+                                    <option value="2009_Pricing_Calculators/COMMALITE_CALCULATOR_2009.htm">Commalite (CML)</option>
+
+							
+<option value="2009_Pricing_Calculators/CP_SYSTEM_CALCULATOR_2009.htm">CP System (PCP/CCP/WSCP)</option>
+									<option value="PRICING_CALCULATORS/Kelly_calculator_0707.htm">Kelly Pendants (KP)</option>
+									<option value="PRICING_CALCULATORS/LIGHTPLANE_11_recessed-032709.htm">Lightplane 11 Recessed (LPR11)</option>
+									<option value="2009_Pricing_Calculators/LUCERNA_ROUND_REFLECTORz_2009_CALCULATOR.htm">Lucerna (LUC)</option>
+
+									<option value="2009_Pricing_Calculators/LINEAR_LIGHTPLANE-RECESSED-2INS-CALCULATOR-2009.htm">Lightplane Linear Recessed 2" Profile(LPLR)</option>
+                                    
+									<option value="2009_Pricing_Calculators/LPLR3_5_2009.html">Lightplane Linear Recessed 3.5" Profile (LPLR3.5")</option>
+                                    
+                                   <option value="2009_Pricing_Calculators/LIGHTPLANE_LINEAR_WALWASH_CALCULATOR_2009.htm">Lightplane Linear Wall Wash (LPLWWT)</option> 
+                                  <option value="PRICING_CALCULATORS/LYTESPOT_2009_CALCULATOR.htm">Recessed Lytespot (RCS)</option>
+									
+									
+<option value="2009_Pricing_Calculators/PLATES_CALCULATOR_2009.htm">Plates(PL)</option>
+                                    <option value="PRICING_CALCULATORS/SIMPLEfORM_ESTIMATOR.htm">SimpleForm (SF)</option>
+                                    <option value="PRICING_CALCULATORS/REGENCY-GROOVE_CALCULATOR_2009.htm">Regency and Groove (REG/ GRV)</option>
+                                                </select> <input type="button" onclick="goOut();" value="Go"><br>
+								
+							</form>
+		</div>
+	</div> <!-- end right side of rep content -->
+</div>

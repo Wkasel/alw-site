@@ -1,0 +1,19 @@
+
+<ol class="carousel-indicators">
+  {{#each images}}
+  {{#if @index}}
+  <li data-target="#product-carousel" data-slide-to="{{@index}}"></li>{{else}}
+  <li data-target="#product-carousel" data-slide-to="{{@index}}" class="active"></li>{{/if}}
+  {{/each}}
+</ol>
+<div class="carousel-inner">
+  {{#each images}}
+  {{#if @index}}
+  <div class="item">
+    <div style="background:url('http://www.archltgworks.com/source/images/site_images/{{this}}'); background-size: cover; background-position: center center;" class="image"></div>
+  </div>{{else}}
+  <div class="item active">
+    <div style="background:url('http://www.archltgworks.com/source/images/site_images/{{this}}'); background-size: cover; background-position: center center;" class="image"></div>
+  </div>{{/if}}
+  {{/each}}
+</div><a href="#product-carousel" data-slide="prev" class="left carousel-control"><span class="icon-prev"></span></a><a href="#product-carousel" data-slide="next" class="right carousel-control"><span class="icon-next"></span></a>

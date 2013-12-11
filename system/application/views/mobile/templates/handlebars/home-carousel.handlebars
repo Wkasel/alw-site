@@ -1,0 +1,21 @@
+
+<ol class="carousel-indicators">
+  {{#each data}}
+  {{#if @index}}
+  <li data-target="#home-carousel" data-slide-to="{{@index}}"></li>{{else}}
+  <li data-target="#home-carousel" data-slide-to="{{@index}}" class="active"></li>{{/if}}
+  {{/each}}
+</ol>
+<div class="carousel-inner">
+  {{#each data}}
+  {{#if @index}}
+  <div class="item">
+    <div style="background:url('resources/images/{{image}}'); background-size: 100%; background-position: center center;" data-href="/products/product/{{product_id}}" class="image"></div>
+    <div class="carousel-caption">{{job_location}}</div>
+  </div>{{else}}
+  <div class="item active">
+    <div style="background:url('resources/images/{{image}}'); background-size: 100%; background-position: center center;" data-href="/products/product/{{product_id}}" class="image"></div>
+    <div class="carousel-caption">{{job_location}}</div>
+  </div>{{/if}}
+  {{/each}}
+</div><a href="#home-carousel" data-slide="prev" class="left carousel-control"><span class="icon-prev"></span></a><a href="#home-carousel" data-slide="next" class="right carousel-control"><span class="icon-next"></span></a>

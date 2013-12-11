@@ -1,0 +1,177 @@
+<script type="text/javascript">
+{literal}
+function validateIt() {
+	var name_length = $('#ag_name').val().length;
+	var job_length = $('#job_name').val().length;
+	var valid = true;
+	if (name_length == 0) {
+		$('#ag_name').css('background-color', '#FF9F9F');
+		valid = false;
+	}
+	if (job_length == 0) {
+		$('#job_name').css('background-color', '#FF9F9F');
+		valid = false;
+	}
+	if (!valid) {
+		 $('html,body').animate({scrollTop:0},1000,function(){});
+
+	}
+	return valid;
+}
+{/literal}
+</script>
+<div style="margin-left:30px; margin-bottom:20px;">
+<form 
+action="/content/rep_area/email/" 
+method="post">
+				<table cool="cool" gridx="16" gridy="16" showgridx="showgridx"  border="0"
+ cellpadding="0" cellspacing="0" height="598" width="752" class="find_res">
+					<tbody><tr height="1">
+						<td colspan="4" height="1" width="224"></td>
+						<td colspan="2" rowspan="2" height="64" width="527"></td>
+						<td height="1" width="1"><spacer type="block" height="1" width="1"></td>
+					</tr>
+
+					<tr height="63">
+						<td colspan="4" xpos="0" align="left" height="63" valign="top" 
+width="224"></td>
+						<td height="63" width="1"><spacer type="block" height="63" 
+width="1"></td>
+					</tr>
+					<tr height="79">
+						<td rowspan="12" height="533" width="4"></td>
+						<td colspan="2" height="79" width="178"></td>
+						<td colspan="3" xpos="182" align="left" height="79" valign="top" 
+width="569"><label for="SPECIFICATION REGISTRATION">
+								</label><div class="style1" align="center">
+
+									<h2><b>SPECIFICATION REGISTRATION</b></h2>
+								</div>
+					  </td>
+						<td height="79" width="1"><spacer type="block" height="79" 
+width="1"></td>
+					</tr>
+					<tr height="32">
+						<td colspan="2" xpos="4" align="left" height="32" valign="top" 
+width="178"><label>AGENCY NAME</label></td>
+						<td rowspan="4" height="128" width="42"></td>
+
+						<td rowspan="6" height="192" width="80"></td>
+						<td xpos="304" align="left" height="32" valign="top" width="447"><input
+ id="ag_name" name="Agency Name" size="53" type="text"></td>
+						<td height="32" width="1"><spacer type="block" height="32" 
+width="1"></td>
+					</tr>
+					<tr height="32">
+						<td colspan="2" xpos="4" align="left" height="32" valign="top" 
+width="178"><label>JOB NAME</label></td>
+						<td xpos="304" align="left" height="32" valign="top" width="447"><input
+ name="Job Name" size="53" type="text" id="job_name"></td>
+						<td height="32" width="1"><spacer type="block" height="32" 
+width="1"></td>
+					</tr>
+					<tr height="32">
+						<td colspan="2" xpos="4" align="left" height="32" valign="top" 
+width="178"><label>DATE</label></td>
+						<td xpos="304" align="left" height="32" valign="top" width="447"><input
+ id="ID_Date_BF2A600E" name="Date" size="53" type="text"></td>
+						<td height="32" width="1"><spacer type="block" height="32" 
+width="1"></td>
+
+					</tr>
+					
+					<tr height="32">
+						<td colspan="2" xpos="4" align="left" height="32" valign="top" 
+width="178"><label>SPECIFIER NAME</label></td>
+
+						<td xpos="304" align="left" height="32" valign="top" width="447"><input
+ id="ID_Specifier Name_BF2A600E" name="specifier_name" size="53" 
+type="text"></td>
+						<td height="32" width="1"><spacer type="block" height="32" 
+width="1"></td>
+					</tr>
+					<tr height="32">
+						<td colspan="3" xpos="4" align="left" height="32" valign="top" 
+width="220"><label>INSTALLATION LOCATION</label></td>
+						<td xpos="304" align="left" height="32" valign="top" width="447"><input
+ id="ID_Installation Location_BF2A600E" name="Installation Location" 
+size="53" type="text"></td>
+						<td height="32" width="1"><spacer type="block" height="32" 
+width="1"></td>
+					</tr>
+
+					<tr height="32">
+						<td colspan="3" xpos="4" align="left" height="32" valign="top" 
+width="220"><label>BUYER'S NAME - (if known)</label></td>
+						<td xpos="304" align="left" height="32" valign="top" width="447"><input
+ id="ID_Buyer's Name_BF2A600E" name="bname" size="53" type="text"></td>
+						<td height="32" width="1"><spacer type="block" height="32" 
+width="1"></td>
+					</tr>
+					<tr height="96">
+						<td colspan="2" xpos="4" align="left" height="96" valign="top" 
+width="178"><label>Brief Product Description</label></td>
+						<td height="96" width="42"></td>
+
+						<td colspan="2" xpos="224" align="left" height="96" valign="top" 
+width="527"><textarea name="Product Description" rows="4" cols="62"></textarea></td>
+						<td height="96" width="1"><spacer type="block" height="96" 
+width="1"></td>
+					</tr>
+					<tr height="32">
+						<td colspan="3" xpos="4" align="left" height="32" valign="top" 
+width="220"><label>Appoximate date of purchase</label></td>
+						<td rowspan="2" height="64" width="80"></td>
+						<td xpos="304" align="left" height="32" valign="top" width="447"><input
+ id="ID_Approximate Date of Purchase_BF2A600E" name="purchase" size="53" type="text"></td>
+						<td height="32" width="1"><spacer type="block" height="32" 
+width="1"></td>
+
+					</tr>
+					<tr height="32">
+						<td colspan="3" xpos="4" align="left" height="32" valign="top" 
+width="220"><label>Approximate value @ Dealer Net</label></td>
+						<td xpos="304" align="left" height="32" valign="top" width="447"><input
+ id="ID_Approximate Value @ Dealer Net_BF2A600E" name="dealer" size="53" type="text"></td>
+						<td height="32" width="1"><spacer type="block" height="32" 
+width="1"></td>
+					</tr>
+					<tr height="65">
+						<td colspan="2" xpos="4" align="left" height="65" valign="top" 
+width="178"><label>Any other information</label></td>
+
+						<td rowspan="2" height="102" width="42"></td>
+						<td colspan="2" rowspan="2" xpos="224" align="left" height="102" 
+valign="top" width="527"><textarea id="ID_Other Info_BF2A600E" 
+name="other_info" rows="5" cols="62"></textarea></td>
+						<td height="65" width="1"><spacer type="block" height="65" 
+width="1"></td>
+					</tr>
+					<tr height="37">
+						<td height="37" width="15"></td>
+						<td xpos="19" align="left" height="37" valign="top" width="163"><input
+ id="ID_submitButtonName_BF2A600E" name="submitButtonName" type="submit" name="send" value="Send" onclick="return validateIt();">&nbsp;
+						<input
+ id="ID_submitButtonName_BF2A600E" name="submitButtonName" type="button"  onclick="window.location = '/content/rep_area/'" value="Back"></td>
+						<td height="37" width="1"><spacer type="block" height="37" 
+width="1"></td>
+
+					</tr>
+					<tr cntrlrow="cntrlrow" height="1">
+						<td height="1" width="4"><spacer type="block" height="1" width="4"></td>
+						<td height="1" width="15"><spacer type="block" height="1" 
+width="15"></td>
+						<td height="1" width="163"><spacer type="block" height="1" 
+width="163"></td>
+						<td height="1" width="42"><spacer type="block" height="1" 
+width="42"></td>
+						<td height="1" width="80"><spacer type="block" height="1" 
+width="80"></td>
+						<td height="1" width="447"><spacer type="block" height="1" 
+width="447"></td>
+						<td height="1" width="1"></td>
+
+					</tr>
+				</tbody></table>
+			</form>
+</div>
