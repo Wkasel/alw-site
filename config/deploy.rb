@@ -65,3 +65,4 @@ namespace :deploy do
     run "chmod 660 #{latest_release}/system/logs"
     run "chmod 660 #{latest_release}/uploads/"
   end
+end
