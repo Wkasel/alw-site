@@ -29,10 +29,16 @@ set :copy_cache, true
 set :copy_exclude, [".git", "bin/", "config/", "Capfile"]  # no need to include the git config directory
  
 # Roles
-role :app, "#{application}"
-role :web, "#{application}"
-role :db,  "#{application}", :primary => true
+role :web, domain
+role :app, domain
+role :db,  domain, :primary => true
  
+ 
+def relative_path(from_str, to_str)
+  require 'pathname'
+  Pathname.new(to_str).relative_path_from(Pathname.new(from_str)).to_s
+end
+
 # Deployment process
 after "deploy:update", "deploy:cleanup" 
 after "deploy", "deploy:sort_files_and_directories"
