@@ -4,6 +4,7 @@ set :stages, %w(prod dev)
 set :default_stage, 'dev'
  
 require 'capistrano/ext/multistage'
+
 set :site,         "179669"
 set :application, "alwusa.com"
 set :deploy_to, "~/domains/alwusa.com/html"
@@ -64,5 +65,3 @@ namespace :deploy do
     run "chmod 660 #{latest_release}/system/logs"
     run "chmod 660 #{latest_release}/uploads/"
   end
- 
-end
