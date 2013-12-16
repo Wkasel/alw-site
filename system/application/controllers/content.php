@@ -101,6 +101,24 @@ class Content extends SmartyController {
 		$this->smarty('index', $this->layout);
 	}
   
+  function downloads() {
+    $this->layout['downloads'] = $this->Content_Model->getPage('downloads');
+    $this->layout['section'] = 'downloads';
+    $this->smarty('index', $this->layout);
+  }
+  
+  function about_us() {
+    $this->layout['about'] = $this->Content_Model->getPage('about');
+    $this->layout['section'] = 'about';
+    $this->smarty('index', $this->layout);
+  }
+  
+  function custom($page) {
+    $this->layout['content_items'] = $this->Content_Model->getPage($page);
+    $this->layout['section'] = 'custom';
+    $this->smarty('index', $this->layout);
+  }
+  
 	function quickship() {
 		$this->layout['section'] = 'quickship';
 		$this->smarty('index', $this->layout);

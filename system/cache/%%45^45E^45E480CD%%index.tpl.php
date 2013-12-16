@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2013-12-10 18:19:35
+<?php /* Smarty version 2.6.18, created on 2013-12-16 01:47:05
          compiled from index.tpl */ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -24,6 +24,18 @@
 <script type="text/javascript" src="/source/js/carousel.js"></script>
 
 <script type="text/javascript" src="http://m.archltgworks.com/site-detect.js?5"></script>
+<!-- Chang URLs to wherever Video.js files will be hosted -->
+<link href="/source/css/video-js.css" rel="stylesheet" type="text/css">
+<script src="/source/js/video.js"></script>
+
+<!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+<script>
+<?php echo '
+  videojs.options.flash.swf = "/source/fl/video-js.swf";
+'; ?>
+
+</script>
+
 
 <script type="text/javascript">
 <?php echo '
@@ -37,12 +49,15 @@
 
 </script>
 <script>
-  (function(i,s,o,g,r,a,m),i[r].l=1*new Date();a=s.createElement(o),
+<?php echo '
+  (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,\'script\',\'//www.google-analytics.com/analytics.js\',\'ga\');
 
-  ga('create', 'UA-44610179-1', 'archltgworks.com');
-  ga('send', 'pageview');
+  ga(\'create\', \'UA-44610179-1\', \'archltgworks.com\');
+  ga(\'send\', \'pageview\');
+'; ?>
 
 </script>
 	</head>
@@ -86,10 +101,12 @@
 									<li><a href="/content/find_rep/"<?php if ($this->_tpl_vars['section'] == 'find_rep'): ?> class="active"<?php endif; ?>>find a rep</a></li>
 									<li><a href="/content/contacts/"<?php if ($this->_tpl_vars['section'] == 'contacts'): ?> class="active"<?php endif; ?>>contact us</a></li>
 									<?php if ($this->_tpl_vars['user_info']): ?><li><a href="/content/rep_area/"<?php if ($this->_tpl_vars['rep']): ?> class="active"<?php endif; ?>>rep site</a></li><?php endif; ?>
-								  <li><a href="/source/files/main_files/ALW-pdf_catalog_2013-web-1.pdf" target="_blank">CATALOG</a></li>
-									<li><a href="http://www.facebook.com/home.php?#!/pages/Architectural-Lighting-Works/128905350456144?ref=ts" target="_blank"><img src="/source/images/facebook.png" alt="" /></a></li>
-																		<li><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=5kw8jddab&p=oi&m=1102843861342" target="_blank">JOIN OUR MAILING LIST</a></li>																			
-                  <li><a href="/content/event_calendar/"<?php if ($this->_tpl_vars['section'] == 'event_calendar'): ?> class="active"<?php endif; ?>>EVENTS</a></li>									
+								  <li><a href="/source/files/main_files/ALW-pdf_catalog_2013-web-1.pdf" target="_blank">Catalog</a></li>
+                  <!-- <li><a href="http://www.facebook.com/home.php?#!/pages/Architectural-Lighting-Works/128905350456144?ref=ts" target="_blank"><img src="/source/images/facebook.png" alt="" /></a></li> -->
+                  <li><a href="/content/downloads">Downloads</a></li>
+									                  <!-- <li><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=5kw8jddab&p=oi&m=1102843861342" target="_blank">Mailing List</a></li>                                       -->
+                  <li><a href="/content/about_us">About Us</a></li>
+                  <li><a href="/content/event_calendar/"<?php if ($this->_tpl_vars['section'] == 'event_calendar'): ?> class="active"<?php endif; ?>>Events</a></li>									
 								</ul>
 								<?php if (! $this->_tpl_vars['user_info']): ?>
 								<form action="" method="post">
@@ -110,7 +127,7 @@
 						<!-- red shadow contents -->
 							<?php if ($this->_tpl_vars['section'] == 'main'): ?>
 								<?php $_smarty_tpl_vars = $this->_tpl_vars;
-$this->_smarty_include(array('smarty_include_tpl_file' => "red_shadow/main.tpl", 'smarty_include_vars' => array()));
+$this->_smarty_include(array('smarty_include_tpl_file' => "red_shadow/video.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
@@ -178,7 +195,19 @@ $this->_smarty_include(array('smarty_include_tpl_file' => "project.tpl", 'smarty
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
-							
+							<?php elseif ($this->_tpl_vars['section'] == 'downloads'): ?>
+								<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "downloads.tpl", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+							<?php elseif ($this->_tpl_vars['section'] == 'custom'): ?>
+								<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "custom.tpl", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+
 							<?php elseif ($this->_tpl_vars['section'] == 'page'): ?>
 								<?php echo $this->_tpl_vars['content']; ?>
 

@@ -19,6 +19,17 @@
 <script type="text/javascript" src="/source/js/carousel.js"></script>
 
 <script type="text/javascript" src="http://m.archltgworks.com/site-detect.js?5"></script>
+<!-- Chang URLs to wherever Video.js files will be hosted -->
+<link href="/source/css/video-js.css" rel="stylesheet" type="text/css">
+<script src="/source/js/video.js"></script>
+
+<!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+<script>
+{literal}
+  videojs.options.flash.swf = "/source/fl/video-js.swf";
+{/literal}
+</script>
+
 
 <script type="text/javascript">
 {literal}
@@ -31,6 +42,7 @@
 {/literal}
 </script>
 <script>
+{literal}
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -38,7 +50,7 @@
 
   ga('create', 'UA-44610179-1', 'archltgworks.com');
   ga('send', 'pageview');
-
+{/literal}
 </script>
 	</head>
 	<body{if $section == 'contacts'} class="contactBody"{/if}>
@@ -75,12 +87,14 @@
 									<li><a href="/content/find_rep/"{if $section == 'find_rep'} class="active"{/if}>find a rep</a></li>
 									<li><a href="/content/contacts/"{if $section == 'contacts'} class="active"{/if}>contact us</a></li>
 									{if $user_info}<li><a href="/content/rep_area/"{if $rep} class="active"{/if}>rep site</a></li>{/if}
-								  <li><a href="/source/files/main_files/ALW-pdf_catalog_2013-web-1.pdf" target="_blank">CATALOG</a></li>
-									<li><a href="http://www.facebook.com/home.php?#!/pages/Architectural-Lighting-Works/128905350456144?ref=ts" target="_blank"><img src="/source/images/facebook.png" alt="" /></a></li>
+								  <li><a href="/source/files/main_files/ALW-pdf_catalog_2013-web-1.pdf" target="_blank">Catalog</a></li>
+                  <!-- <li><a href="http://www.facebook.com/home.php?#!/pages/Architectural-Lighting-Works/128905350456144?ref=ts" target="_blank"><img src="/source/images/facebook.png" alt="" /></a></li> -->
+                  <li><a href="/content/downloads">Downloads</a></li>
 									{*<li class="fLike"><iframe src="http://www.facebook.com/plugins/like.php?href=http://archltgworks.com&amp;layout=button_count&amp;show_faces=false&amp;width=108&amp;action=like&amp;colorscheme=dark&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe></li>
 									*}
-									<li><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=5kw8jddab&p=oi&m=1102843861342" target="_blank">JOIN OUR MAILING LIST</a></li>																			
-                  <li><a href="/content/event_calendar/"{if $section == 'event_calendar'} class="active"{/if}>EVENTS</a></li>									
+                  <!-- <li><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=5kw8jddab&p=oi&m=1102843861342" target="_blank">Mailing List</a></li>                                       -->
+                  <li><a href="/content/about_us">About Us</a></li>
+                  <li><a href="/content/event_calendar/"{if $section == 'event_calendar'} class="active"{/if}>Events</a></li>									
 								</ul>
 								{if !$user_info}
 								<form action="" method="post">
@@ -99,7 +113,7 @@
 							</div> <!-- end navigation -->
 						<!-- red shadow contents -->
 							{if $section == 'main'}
-								{include file="red_shadow/main.tpl"}
+								{include file="red_shadow/video.tpl"}
 							{elseif $section == 'find_rep'}
 								{include file="red_shadow/find_rep.tpl"}
 							
@@ -124,7 +138,11 @@
 								{include file="featured.tpl"}
 							{elseif $section == 'project'}
 								{include file="project.tpl"}
-							
+							{elseif $section == 'downloads'}
+								{include file="downloads.tpl"}
+							{elseif $section == 'custom'}
+								{include file="custom.tpl"}
+
 							{elseif $section == 'page'}
 								{$content}
 							{elseif $section == 'rep_area'}
