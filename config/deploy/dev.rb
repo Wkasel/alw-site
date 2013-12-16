@@ -1,3 +1,3 @@
 # Add me in config/deploy/dev.rb
-set :application, 'dev.alwusa.com'
+set :application, 'alwusa.com'
 set :branch, 'develop'
