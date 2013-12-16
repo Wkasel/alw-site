@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteBase /
+RewriteCond $1 !^(.*\.(html|htm|js|css|jpg|png|gif|jpeg|swf|bmp|php|zip|rar|ico|pdf|ppt|pptx|docx|doc|pdf|ldt|ies|xls|xlsx)) [NC]
+RewriteRule ^(.*)$ index.php/$1 [L]
+ErrorDocument 404 /system/application/errors/error_404.php
+php_value post_max_size 100M
+php_value upload_max_filesize 100M
+php_value max_file_uploads 300
+AddHandler php5-script .php
