@@ -22,6 +22,7 @@
 <!-- Chang URLs to wherever Video.js files will be hosted -->
 <link href="/source/css/video-js.css" rel="stylesheet" type="text/css">
 <script src="/source/js/video.js"></script>
+<script src="/source/js/custom-122913.js"></script>
 
 <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
 <script>

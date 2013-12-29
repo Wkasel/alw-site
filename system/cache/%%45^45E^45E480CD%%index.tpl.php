@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2013-12-16 01:47:05
+<?php /* Smarty version 2.6.18, created on 2013-12-29 15:15:09
          compiled from index.tpl */ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -27,6 +27,7 @@
 <!-- Chang URLs to wherever Video.js files will be hosted -->
 <link href="/source/css/video-js.css" rel="stylesheet" type="text/css">
 <script src="/source/js/video.js"></script>
+<script src="/source/js/custom-122913.js"></script>
 
 <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
 <script>
