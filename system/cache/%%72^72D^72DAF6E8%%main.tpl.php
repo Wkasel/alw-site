@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2013-12-16 01:01:54
+<?php /* Smarty version 2.6.18, created on 2013-12-29 15:45:46
          compiled from main.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'main.tpl', 104, false),)), $this); ?>
@@ -176,19 +176,19 @@ $(document).ready(function() {
 	<!-- end template-->
    	<div class="quickship_banner_black" style="left:669px">
   	</div>	
-			<div  style="background: url('/source/images/circul.jpg') no-repeat scroll right top transparent;
+			<!-- <div  style="background: url('/source/images/circul.jpg') no-repeat scroll right top transparent;
                                     position:absolute;
                                     min-height: 168px;
                                     left:720px;
                                     width: 260px;
                                     z-index: 100;"
            >
-				<img class="h" src="/source/images/about-alw.jpg" alt=""  />
-				<p class="text" style="line-height: 20px;"></p><br />
-				<a href="/content/pages/about/">
-				<img class="more" src="/source/images/read-more.jpg" alt=""  class="more" />
-				</a>
-			</div>
+        <img class="h" src="/source/images/about-alw.jpg" alt=""  />
+        <p class="text" style="line-height: 20px;"></p><br />
+        <a href="/content/pages/about/">
+        <img class="more" src="/source/images/read-more.jpg" alt=""  class="more" />
+        </a>
+      </div> -->
 		</div>  
 	<!-- end products -->
 <!-- end main page -->
