@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2014-01-01 11:16:42
+<?php /* Smarty version 2.6.18, created on 2014-01-01 12:19:51
          compiled from rep_area.tpl */ ?>
 	<script type="text/javascript" src="/source/js/accord.js"></script>
 
@@ -40,7 +40,7 @@ $(function(){
 		</div>
 	</div> <!-- end left side of rep content -->
 	<div class="right_side"> <!-- right side of rep content -->
-		<div style="font-family:Verdana; font-size:13px; color:#fff; padding:0 10px 10px 0;"><?php echo $this->_tpl_vars['article']->ra_desc; ?>
+		<div style="font-family:Verdana; font-size:13px; color:#000; padding:0 10px 10px 0;"><?php echo $this->_tpl_vars['article']->ra_desc; ?>
 </div>
 	</div> <!-- end right side of rep content -->
 </div> 

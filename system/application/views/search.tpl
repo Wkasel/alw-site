@@ -1,6 +1,6 @@
 
 	<div class="bread"> <!-- bread crumbs -->
-		<a href="/content/products/" style="color:#FFF;">PRODUCTS</a> / <span>Search results for "{$keyword}"</span>
+		<a href="/content/products/" style="color:#000;">PRODUCTS</a> / <span>Search results for "{$keyword}"</span>
 	</div> <!-- end bread crumbs -->
 	{if  $total_nodes > 1}
 		{if $page+1 > $total_nodes}
@@ -13,8 +13,8 @@
 		{else}
 			{assign var="prev" value=0}
 		{/if} 
-		<div style="font-weight:bold; float:right; color:#fff; margin-right:32px; margin-top:-10px;">
-			{if $page > 1}&nbsp;<a style="color:#FFF;" href="/content/search/1/?keyword={$keyword}"><<</a>&nbsp;&nbsp;<a style="color:#FFF;" href="/content/search/{$prev}/?keyword={$keyword}"><</a>{/if}
+		<div style="font-weight:bold; float:right; color:#000; margin-right:32px; margin-top:-10px;">
+			{if $page > 1}&nbsp;<a style="color:#000;" href="/content/search/1/?keyword={$keyword}"><<</a>&nbsp;&nbsp;<a style="color:#000;" href="/content/search/{$prev}/?keyword={$keyword}"><</a>{/if}
 			{assign var="no_dots" value="yes"}
 			{section name=foo start=0 loop=$total_nodes step=1}
 				{if $smarty.section.foo.iteration > 5 && $smarty.section.foo.iteration > $page+5  && $smarty.section.foo.iteration+5 < $total_nodes}
@@ -25,13 +25,13 @@
 						{if $smarty.section.foo.iteration eq $page}
 							<span style="color:#FF0000">{$smarty.section.foo.iteration}</span>
 						{else}
-							<a style="color:#FFF;" href="/content/search/{$smarty.section.foo.iteration}/?keyword={$keyword}" title="{$smarty.section.foo.iteration}">{$smarty.section.foo.iteration}</a>
+							<a style="color:#000;" href="/content/search/{$smarty.section.foo.iteration}/?keyword={$keyword}" title="{$smarty.section.foo.iteration}">{$smarty.section.foo.iteration}</a>
 						{/if}
 					{/if}
 				{/if}
 			{/section}
-			{if $page < $total_nodes}&nbsp;<a style="color:#FFF;" href="/content/search/{$next}/?keyword={$keyword}">></a>&nbsp;&nbsp;
-			<a style="color:#FFF;" href="/content/search/{$total_nodes}/?keyword={$keyword}">>></a>&nbsp;&nbsp;{/if}
+			{if $page < $total_nodes}&nbsp;<a style="color:#000;" href="/content/search/{$next}/?keyword={$keyword}">></a>&nbsp;&nbsp;
+			<a style="color:#000;" href="/content/search/{$total_nodes}/?keyword={$keyword}">>></a>&nbsp;&nbsp;{/if}
 		</div>
 	{/if}
 	<br />
@@ -47,7 +47,7 @@
 	<a href="/content/product/{$node->products_id}/">{$node->p_name}</a></div>
 	{/foreach}
 	{if count($objects) == 0}
-	<h3 style="color:#FFF;">No Results Found</h3>
+	<h3 style="color:#000;">No Results Found</h3>
 	{/if}
 	</div>
 </div>

@@ -1,10 +1,10 @@
-<?php /* Smarty version 2.6.18, created on 2014-01-01 12:07:57
+<?php /* Smarty version 2.6.18, created on 2014-01-01 12:11:21
          compiled from view_all.tpl */ ?>
 <div class="prod_phot"> <!-- products photo -->
 	
 	</div> <!-- end products photo -->
 	<div class="bread"> <!-- bread crumbs -->
-		<span style="font-size:17px;"><a href="/content/products/" style="color:#FFF;">PRODUCTS</a> / <span>VIEW ALL</span></span>
+		<span style="font-size:17px;"><a href="/content/products/" style="color:#000;">PRODUCTS</a> / <span>VIEW ALL</span></span>
 	</div> <!-- end bread crumbs -->
 	
 

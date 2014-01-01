@@ -30,7 +30,7 @@ $(function(){
 		</div>
 	</div> <!-- end left side of rep content -->
 	<div class="right_side"> <!-- right side of rep content -->
-		<div style="font-family:Verdana; font-size:13px; color:#fff; padding:0 10px 10px 0;">{$article->ra_desc}</div>
+		<div style="font-family:Verdana; font-size:13px; color:#000; padding:0 10px 10px 0;">{$article->ra_desc}</div>
 	</div> <!-- end right side of rep content -->
 </div> 
 
