@@ -2,7 +2,7 @@
 	
 	</div> <!-- end products photo -->
 	<div class="bread"> <!-- bread crumbs -->
-		<span style="font-size:17px;"><a href="/content/products/" style="color:#FFF;">PRODUCTS</a> / <span>VIEW ALL</span></span>
+		<span style="font-size:17px;"><a href="/content/products/" style="color:#000;">PRODUCTS</a> / <span>VIEW ALL</span></span>
 	</div> <!-- end bread crumbs -->
 	
 
