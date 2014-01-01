@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.18, created on 2013-12-16 01:44:42
+<?php /* Smarty version 2.6.18, created on 2014-01-01 11:46:09
          compiled from featured.tpl */ ?>
 <script language="javascript" type="text/javascript" src="/source/js/nf.js"></script>
 <script type="text/javascript">
@@ -16,7 +16,7 @@ function getFile(select_name) {
 
 </script>
 <div class="bread"> <!-- bread crumbs -->
-	<a href="/content/products/" style="color:#FFF;">FEATURED PRODUCTS</a> / <?php echo $this->_tpl_vars['product']->p_name; ?>
+	<a href="/content/products/" style="color:#000;">FEATURED PRODUCTS</a> / <?php echo $this->_tpl_vars['product']->p_name; ?>
 
 </div> <!-- end bread crumbs -->
 <div class="clearfix">
@@ -117,8 +117,8 @@ if ($this->_foreach['images']['total'] > 0):
 		<?php else: ?>
 			<?php $this->assign('prev', 0); ?>
 		<?php endif; ?> 
-		<div style="font-weight:bold; float:right; color:#fff; margin-right:32px; margin-top:90px; font-size:13px;">
-			<?php if ($this->_tpl_vars['page'] > 1): ?>&nbsp;<a style="color:#FFF;" href="/content/featured_show/1/"><<</a>&nbsp;&nbsp;<a style="color:#FFF;" href="/content/featured_show/<?php echo $this->_tpl_vars['prev']; ?>
+		<div style="font-weight:bold; float:right; color:#000; margin-right:32px; margin-top:90px; font-size:13px;">
+			<?php if ($this->_tpl_vars['page'] > 1): ?>&nbsp;<a style="color:#000;" href="/content/featured_show/1/"><<</a>&nbsp;&nbsp;<a style="color:#000;" href="/content/featured_show/<?php echo $this->_tpl_vars['prev']; ?>
 /"><</a><?php endif; ?>
 			<?php $this->assign('no_dots', 'yes'); ?>
 			<?php unset($this->_sections['foo']);
@@ -158,7 +158,7 @@ $this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] ==
 							<span style="color:#FF0000"><?php echo $this->_sections['foo']['iteration']; ?>
 </span>
 						<?php else: ?>
-							<a style="color:#FFF;" href="/content/featured_show/<?php echo $this->_sections['foo']['iteration']; ?>
+							<a style="color:#000;" href="/content/featured_show/<?php echo $this->_sections['foo']['iteration']; ?>
 /" title="<?php echo $this->_sections['foo']['iteration']; ?>
 "><?php echo $this->_sections['foo']['iteration']; ?>
 </a>
@@ -166,9 +166,9 @@ $this->_sections['foo']['last']       = ($this->_sections['foo']['iteration'] ==
 					<?php endif; ?>
 				<?php endif; ?>
 			<?php endfor; endif; ?>
-			<?php if ($this->_tpl_vars['page'] < $this->_tpl_vars['total_nodes']): ?>&nbsp;<a style="color:#FFF;" href="/content/featured_show/<?php echo $this->_tpl_vars['next']; ?>
+			<?php if ($this->_tpl_vars['page'] < $this->_tpl_vars['total_nodes']): ?>&nbsp;<a style="color:#000;" href="/content/featured_show/<?php echo $this->_tpl_vars['next']; ?>
 /">></a>&nbsp;&nbsp;
-			<a style="color:#FFF;" href="/content/featured_show/<?php echo $this->_tpl_vars['total_nodes']; ?>
+			<a style="color:#000;" href="/content/featured_show/<?php echo $this->_tpl_vars['total_nodes']; ?>
 /">>></a>&nbsp;&nbsp;<?php endif; ?>
 		</div>
 	<?php endif; ?>

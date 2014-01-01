@@ -1,4 +1,4 @@
-d<script language="javascript" type="text/javascript" src="/source/js/nf.js"></script>
+<script language="javascript" type="text/javascript" src="/source/js/nf.js"></script>
 <script type="text/javascript">
 {literal}
 function getFile(select_name) {
@@ -13,7 +13,7 @@ function getFile(select_name) {
 {/literal}
 </script>
 <div class="bread"> <!-- bread crumbs -->
-	<a href="/content/products/" style="color:#FFF; font-size:17px;">PRODUCTS</a> / <span><a href="/content/cat/{$cat->pc_name}/" style="color:#FFF;  font-size:17px;">{$cat->pc_name|upper}</a></span> / <span style="font-size:17px;">{$product->p_name}</span>
+	<a href="/content/products/" style="color:#000; font-size:17px;">PRODUCTS</a> / <span><a href="/content/cat/{$cat->pc_name}/" style="color:#000;  font-size:17px;">{$cat->pc_name|upper}</a></span> / <span style="font-size:17px;">{$product->p_name}</span>
 </div> <!-- end bread crumbs -->
 <div class="clearfix">
 	<div class="phots">

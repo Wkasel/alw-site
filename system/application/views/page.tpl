@@ -1,4 +1,4 @@
-<div style="margin-top:10px; margin-bottom:10px; margin-left:10px; color:#FFF;"> 
+<div style="margin-top:10px; margin-bottom:10px; margin-left:10px;"> 
 <img style="width: 940px; margin-left:-10px; margin-top:-10px;" src="/source/images/LP11_1_Lightplane_11_r.jpg" alt="">
 <h1 style="margin-bottom:9px; margin-top:15px; color:#FFF;">{$content.title}</h1>
 <span>{$content.content}</span>

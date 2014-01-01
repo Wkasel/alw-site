@@ -16,7 +16,7 @@
 	</ul>
 	</div> <!-- end products photo -->
 	<div class="bread"> <!-- bread crumbs -->
-		<span style="font-size:17px;"><a href="/content/products/" style="color:#FFF;">PRODUCTS</a> / <span>{$cat_info->pc_name|upper} </span></span>
+		<span style="font-size:17px;"><a href="/content/products/" style="color:#000;">PRODUCTS</a> / <span>{$cat_info->pc_name|upper} </span></span>
 	</div> <!-- end bread crumbs -->
 	
 	<br />

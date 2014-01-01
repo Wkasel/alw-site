@@ -1,4 +1,4 @@
-<script type="text/javascript">
+x<script type="text/javascript">
 {literal}
 function validateIt() {
 	var name_length = $('#ag_name').val().length;

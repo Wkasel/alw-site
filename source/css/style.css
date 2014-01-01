@@ -9,7 +9,7 @@ input, select, textarea {vertical-align:middle;}
 textarea { overflow:auto; }
 img { border:none; display:block;}
 .clearfix:after {content:""; display:block; height:0px; clear:both; visibility:hidden;}
-body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-size-adjust:auto;}
+body {font-size:12px; font-family:"Droid Sans";-webkit-text-size-adjust:auto;}
 
 /* container */
 .container { width:1042px; margin:0 auto; position:relative;}
@@ -53,7 +53,7 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.nav .login div a:hover { border-bottom:none;}
 		
 		/* search */
-		.search { width:240px; height:52px; background:url(/source/images/search-bg.gif) no-repeat; position:absolute; top:0; right:50px;}
+		.search { width:240px; height:52px; position:absolute; top:0; right:50px;}
 		.search form { }
 		.search form div { padding:16px 0 0 17px;}
 		.search form div .inp { border:1px solid #86888b; width:170px; font-size:12px; color:#575a60; padding:3px 5px;}
@@ -67,11 +67,11 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.main .products .prod { float:left; font-size:14px; padding:0 0 0 19px; width:300px;}
 		.main .products .prod:first-child { padding:0;}
 		.main .products .prod img { }
-		.main .products .prod a { color:#fff; text-decoration:underline;}
+		.main .products .prod a { color:#000; text-decoration:underline;}
 		.main .products .prod a:hover { text-decoration:none;}
 		.main .products .about_alw { float:left; min-height: 168px; z-index:2; width:207px; padding:0 95px 0 19px; background:url(/source/images/circul.jpg) no-repeat right top;}
 		.main .products .about_alw .h { padding:5px 0 10px 0;}
-		.main .products .about_alw .text { color:#fff; font-size:13px; line-height:14px;}
+		.main .products .about_alw .text { color:#000; font-size:13px; line-height:14px;}
 		.main .products .about_alw .more { cursor:pointer; padding:16px 0 0 0;}
 		
 		/* products_home */
@@ -79,7 +79,7 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.products_home .prod_phot { font-size:16px;}
 		.products_home .prod_phot ul { padding:7px 0 0 0;}
 		.products_home .prod_phot ul li { float:left; width:226px; padding:0 0 0 7px;}
-		.products_home .prod_phot ul li a { display:block; width:226px; height:160px; position:relative; border:1px solid #767779; color:#fff;}
+		.products_home .prod_phot ul li a { display:block; width:226px; height:160px; position:relative; border:1px solid #767779; color:#000;}
 		.products_home .prod_phot ul li a:hover { }
 		.products_home .prod_phot ul li a.active { }
 		.products_home .prod_phot ul li a img.span_bg2 { display:none; position:absolute; bottom:-14px; left:0;}
@@ -87,7 +87,7 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.products_home .prod_phot ul li a.active img.span_bg2 { display:block;}
 		.products_home .prod_phot ul li a img { width:226px;}
 		.products_home .prod_phot ul li a img.shadow1 { position:absolute; top:0; left:0;}
-		.products_home .prod_phot ul li a span { display:block; width:100%; height:25px; padding:7px 0 0 0; position:absolute; bottom:0; left:0; background:url(/source/images/prod_home/shadow2.png) no-repeat;}
+		.products_home .prod_phot ul li a span { display:block; width:100%; height:25px; padding:7px 0 0 0; position:absolute; bottom:0; left:0;}
 		.products_home .prod_phot ul li a span img { width:21px; float:left; padding:0 15px 0 10px; position:relative;}
 		
 		.products_home .preview { }
@@ -103,7 +103,7 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.products_home .preview .slider .checker .tous ul { float:right; padding:0 11px 0 0;}
 		.products_home .preview .slider .checker .tous ul li { float:left; padding:13px 2px 0 2px;}
 		.products_home .preview .slider .checker .tous ul li a { display:block; width:16px; height:16px; background:url(/source/images/tous.jpg) 0 -32px;}
-		.products_home .preview .slider .checker .tous ul li span { color:#fff; margin:0 30px 0 0;}
+		.products_home .preview .slider .checker .tous ul li span { color:#000; margin:0 30px 0 0;}
 		.products_home .preview .slider .checker .tous ul li a:hover { background-position:0 -48px;}
 		.products_home .preview .slider .checker .tous ul li a:active { background-position:0 -16px;}
 		.products_home .preview .slider .checker .tous ul li a.active { background-position:0 -16px; cursor:default;}
@@ -113,30 +113,30 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.products_category .prod_phot { font-size:16px;}
 		.products_category .prod_phot ul { padding:7px 0 0 0;}
 		.products_category .prod_phot ul li { float:left; width:226px; padding:0 0 0 7px;}
-		.products_category .prod_phot ul li a { display:block; width:226px; height:160px; position:relative; border:1px solid #767779; color:#fff;}
+		.products_category .prod_phot ul li a { display:block; width:226px; height:160px; position:relative; border:1px solid #767779; color:#000;}
 		.products_category .prod_phot ul li a.active { }
 		.products_category .prod_phot ul li a img { width:226px;}
 		.products_category .prod_phot ul li a img.span_bg2 { display:none; position:absolute; bottom:-14px; left:0;}
 		.products_category .prod_phot ul li a:hover img.span_bg2 { display:block;}
 		.products_category .prod_phot ul li a.active img.span_bg2 { display:block;}
 		.products_category .prod_phot ul li a img.shadow1 { position:absolute; top:0; left:0;}
-		.products_category .prod_phot ul li a span { display:block; width:100%; height:25px; padding:7px 0 0 0; position:absolute; bottom:0; left:0; background:url(/source/images/prod_home/shadow2.png) no-repeat;}
+		.products_category .prod_phot ul li a span { display:block; width:100%; height:25px; padding:7px 0 0 0; position:absolute; bottom:0; left:0;}
 		.products_category .prod_phot ul li a span img { width:21px; float:left; padding:0 15px 0 10px; position:relative;}
 		
 		.products_category .prods { text-align:center; font-size:16px; padding:10px 0 0 0;}
 		.products_category .prods div { float:left; width:188px; padding:0 0 31px 0; height:152px; position:relative;}
 		.products_category .prods img { margin:0 auto; padding:0 0 10px 0;}
 		.products_category .prods div .q { position:absolute; top:0; left:31px; width:125px; opacity:0.5;}
-		.products_category .prods a { color:#fff; text-decoration:underline;}
+		.products_category .prods a { color:#000; text-decoration:underline;}
 		.products_category .prods a:hover { text-decoration:none;}
 		
 		/* products detail */
 		.prod_detail { }
 		.prod_detail .phots { width:451px; padding:15px 0 0 20px; margin:0 20px 0 0; float:left;}
-		.prod_detail .descr { padding:15px 0 0 0; color:#fff; float:left; width:425px;}
+		.prod_detail .descr { padding:15px 0 0 0; color:#000; float:left; width:425px;}
 		.prod_detail .descr h1 { font-size:18px; font-weight:normal;}
 		.prod_detail .descr h2 { font-size:16px; color:#a6a6a6; font-weight:normal; padding:0 0 20px 0;}
-		.prod_detail .descr a { display:block; font-weight:bold; color:#fff;}
+		.prod_detail .descr a { display:block; font-weight:bold; color:#000;}
 		.prod_detail .descr a.pdf { font-size:13px; width:212px; background:url(/source/images/a_pdf.jpg) no-repeat; padding:6px 0 8px 43px; margin:0 0 14px 0;}
 		.prod_detail .descr a.btn { font-size:13px; width:212px; background:url(/source/images/btn.jpg) no-repeat; padding:6px 0 8px 34px; margin:0 0 14px 9px;}
 		.prod_detail .descr a.arr { margin:5px 0 14px 6px; float:left;}
@@ -151,18 +151,18 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.prod_detail .phots .slider .checker .tous ul { float:right; padding:0 11px 0 0;}
 		.prod_detail .phots .slider .checker .tous ul li { float:left; padding:13px 2px 0 2px;}
 		.prod_detail .phots .slider .checker .tous ul li a { display:block; width:16px; height:16px; background:url(/source/images/tous.png) 0 -32px;}
-		.prod_detail .phots .slider .checker .tous ul li span { color:#fff; margin:0 30px 0 0;}
+		.prod_detail .phots .slider .checker .tous ul li span { color:#000; margin:0 30px 0 0;}
 		.prod_detail .phots .slider .checker .tous ul li a:hover { background-position:0 -48px;}
 		.prod_detail .phots .slider .checker .tous ul li a:active { background-position:0 -16px;}
 		.prod_detail .phots .slider .checker .tous ul li a.active { background-position:0 -16px; cursor:default;}
 		
 		/* find a rep */
 		.find_a_rep { width:940px; margin:0 auto; }
-		.find_a_rep h1 { font-size:28px; font-weight:normal; color:#fff;}
+		.find_a_rep h1 { font-size:28px; font-weight:normal; color:#000;}
 		.find_a_rep form { }
 		.find_a_rep form div { font-size:14px;}
-		.find_a_rep .sel { width:223px; height:15px; margin:10px 0 10px 0; background:url(/source/images/find_per_sel.jpg) no-repeat; color:#fff; font-weight:bold; padding:6px 0 8px 13px;}
-		.find_a_rep .info { color:#fff; padding:25px 0 0 0; }
+		.find_a_rep .sel { width:223px; height:15px; margin:10px 0 10px 0; color:#000; font-weight:bold; padding:6px 0 8px 13px;}
+		.find_a_rep .info { color:#000; padding:25px 0 0 0; }
 		.find_a_rep .info div { float:left; width:285px; height:180px;}
 		.find_a_rep .info div h2 { font-weight:normal; font-size:16px;}
 		.find_a_rep .info div h3 { font-weight:normal; color:#666; font-size:14px;}
@@ -170,9 +170,9 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.find_a_rep .info div a { color:#c2181e; font-size:12px;}
 		
 		/* contact us */
-		.contact_us { width:940px; margin:0 auto; padding:30px 0 0 0; color:#fff;}
-		.contact_us h1 { font-size:28px; font-weight:normal; color:#fff;}
-		.contact_us .btn { display:block; width:124px; height:17px; margin:10px 0 30px 0; background:url(/source/images/contact_us_btn.jpg) no-repeat #fff; color:#fff; font-weight:bold; padding:6px 0 8px 33px;}
+		.contact_us { width:940px; margin:0 auto; padding:30px 0 0 0; color:#000;}
+		.contact_us h1 { font-size:28px; font-weight:normal; color:#000;}
+		.contact_us .btn { display:block; width:124px; height:17px; margin:10px 0 30px 0; background:url(/source/images/contact_us_btn.jpg) no-repeat #fff; color:#000; font-weight:bold; padding:6px 0 8px 33px;}
 		.contact_us .user { width:445px; float:left; background:url(/source/images/user_bg.jpg) no-repeat bottom right; padding:0 0 20px 0;}
 		.contact_us .user.odd { float:right;}
 		.contact_us .user img { float:left; margin:0 20px 0 0;}
@@ -184,15 +184,15 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		/* rep_content_pae */
 		.rep_content_page { }
 		
-		.rep_content_page .left_side { width:250px; float:left; color:#fff;}
-		.rep_content_page .left_side .content_name { font-size:27px; background:url(/source/images/rep_content_h.jpg) no-repeat left bottom; padding:20px 0 20px 26px;}
+		.rep_content_page .left_side { width:250px; float:left; color:#000;}
+		.rep_content_page .left_side .content_name { font-size:27px; padding:20px 0 20px 26px;}
 		.rep_content_page .left_side .accord { padding:20px 0 0 22px; }
 		.rep_content_page .left_side .accord ul { }
 		.rep_content_page .left_side .accord ul li { text-transform:uppercase;}
 		.rep_content_page .left_side .accord ul li.selected_class ul { display:block;}
 		.rep_content_page .left_side .accord ul li span { font-size:17px; background:url(/source/images/rep_content_arr.jpg) no-repeat 0 5px; padding:0 0 5px 15px; display:block; cursor:pointer;}
 		.rep_content_page .left_side .accord ul li span:hover { color:#838383;}
-		.rep_content_page .left_side .accord ul li a { color:#fff; cursor:pointer;}
+		.rep_content_page .left_side .accord ul li a { color:#000; cursor:pointer;}
 		.rep_content_page .left_side .accord ul li a:hover { color:#838383;}
 		.rep_content_page .left_side .accord ul li a.active { color:#c2181e;}
 		.rep_content_page .left_side .accord ul li ul { padding:0 0 10px 15px; font-size:14px; display:none;}
@@ -201,9 +201,9 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.rep_content_page .left_side .accord ul li ul li a:hover { color:#c2181e;}
 		.rep_content_page .left_side .accord ul li ul li a.selected { color:#c2181e;}
 		
-		.rep_content_page .right_side { float:left; padding:23px 0 0 0; color:#fff;}
+		.rep_content_page .right_side { float:left; padding:23px 0 0 0; color:#000;}
 		.rep_content_page .right_side hr { border:none; border-bottom:1px solid #fff; margin:10px 0;}
-		.find_res { color:#fff;}
+		.find_res { color:#000;}
 		.find_res.back_end { padding:0 0 0 35px;}
 		.find_res .h { font-size:18px; text-transform:uppercase;}
 		.find_res form { }
@@ -215,7 +215,7 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.find_res table tr td { border:1px solid #fff; padding:5px 15px;}
 		.find_res table tr.odd { background:#2d2d2d;}
 		.find_res table tr .id { display:none;}
-		.find_res table tr td input { border:none; border-bottom:1px solid #fff; background:none; color:#fff;}
+		.find_res table tr td input { border:none; border-bottom:1px solid #fff; background:none; color:#000;}
 		
 		 table tr td .super { border:1px solid #fff; background:#6d0c10; padding:5px 15zzzzzpx;}
 		
@@ -234,7 +234,7 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.notes .note { border-bottom:1px solid #808080; padding:6px 0;}
 		.notes .note .date { float:left; color:#b5b5b5;}
 		.notes .note .text { float:right; font-size:13px;}
-		.notes .note .text a { color:#fff; border-bottom:1px dotted #fff;}
+		.notes .note .text a { color:#000; border-bottom:1px dotted #fff;}
 		.notes .note .text a:hover { border-bottom:none;}
 		
 		.note_detail {}
@@ -242,11 +242,11 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.note_detail p {}
 		.note_detail .next_prev { padding:20px 0 10px 0; text-align:center; border-bottom:1px solid #808080;}
 		.note_detail .next_prev img { display:inline; vertical-align:middle; margin:0 5px;}
-		.note_detail .next_prev a { text-transform:uppercase; color:#fff;}
+		.note_detail .next_prev a { text-transform:uppercase; color:#000;}
 		.note_detail .next_prev a:hover span { text-decoration:underline;}
 		
 		.btns { text-align:center; text-transform:uppercase;}
-		.btns a.btn { display:inline-block; background:url(/source/images/btn2.jpg) no-repeat; color:#fff; font-weight:bold; text-align:center; width:104px; padding:9px 0; margin:0 5px;}
+		.btns a.btn { display:inline-block; background:url(/source/images/btn2.jpg) no-repeat; color:#000; font-weight:bold; text-align:center; width:104px; padding:9px 0; margin:0 5px;}
 		
 		.attach { }
 		.attach .p1 { float:left;}
@@ -255,7 +255,7 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.attach .files { }
 		.attach .files .file { border-bottom:1px solid #808080; padding:0;}
 		.attach .files .file .type { float:left; }
-		.attach .files .file .type a { color:#fff;}
+		.attach .files .file .type a { color:#000;}
 		.attach .files .file .type a:hover { text-decoration:underline;}
 		.attach .files .file .type img { display:inline; vertical-align:middle;}
 		.attach .files .file .date { float:right; padding:7px 0 0 0; color:#b5b5b5;}
@@ -284,24 +284,24 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 		.adr div.active a img { display:inline; margin:0 5px 0 0;}
 		
 		/* bread crumbs */
-		.bread { color:#fff; padding:20px 0 0 20px; font-size:17px;}
+		.bread { color:#000; padding:20px 0 0 20px; font-size:17px;}
 		.bread span { color:#838383; }
 		
 		/* red shadow areas */
-		.red_shadow_area { background:url(/source/images/red.jpg) repeat-y;}
-		.red_shadow_area .inner { background:url(/source/images/red_shadow_bottom.jpg) no-repeat bottom;}
-		.red_shadow_area .inner .in-inner { background:url(/source/images/red_shadow_top.jpg) no-repeat top; padding:0 52px 0 50px;}
+		.red_shadow_area { }
+		.red_shadow_area .inner { }
+		.red_shadow_area .inner .in-inner {padding:0 52px 0 50px;}
 		/*.red_shadow_area.h145 { background-position:0 -645px !important;}*/
 		.red_shadow_area.h216 { background-position:0 -4715px !important;}
 		.red_shadow_area.h213 { background-position:0px -4712px !important;}
 		
 	/* footer */
-	.footer { background:url(/source/images/footer-bg.jpg) no-repeat 0 0; width:942px; margin:0 auto;}
-	.footer p { color:#fff; text-align:center; padding:25px 0 25px 0;}
+	.footer {width:942px; margin:0 auto;}
+	.footer p { color:#000; text-align:center; padding:25px 0 25px 0;}
 	
 	
 	/* auth_form */
-	.auth_form { color:#fff; width:290px; margin:100px auto;}
+	.auth_form { color:#000; width:290px; margin:100px auto;}
 	.auth_form form { padding:10px 0; background:#222121; border:2px solid #5a4242;}
 	.auth_form form div { padding:5px 0;}
 	.auth_form div.h { font-weight:bold; padding:0 42px 5px 0;}
@@ -316,12 +316,15 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
 	#notes_list .par { width:10000px; position:relative; top:0; left:0;}
 	#notes_list .par .div { width:421px; float:left; }
 	
-	.contactBody {background:#000 url(/source/images/contact_bg.png) no-repeat center -115px;}
+  /* ============== */
+  /* = Contact Us = */
+  /* ============== */
+/*  .contactBody {background:#000 url(/source/images/contact_bg.png) no-repeat center -115px;}*/
 	.footer_contact {background:url(/source/images/footer_contact_bg.png) no-repeat;}
 	.mapContact {background:url(/source/images/map_contact_bg.png) no-repeat; height:551px; position:relative; margin-top:7px;}
 	.contactBody .red_shadow_area {background:none;}
 	.contactBody  .red_shadow_area .inner {background:url(/source/images/red_shadow_top_bg.gif) center 0;}
-	.contactBtn {display:block; width:76px; height:18px; padding:4px 0 0 22px; margin:7px 0 0; background:url(/source/images/contactBtn.gif) no-repeat; text-transform:uppercase; color:#fff; font-size:10px;}
+	.contactBtn {display:block; width:76px; height:18px; padding:4px 0 0 22px; margin:7px 0 0; background:url(/source/images/contactBtn.gif) no-repeat; text-transform:uppercase; color:#000; font-size:10px;}
 	.weburl{ color:#C2181E;}
 	
 	.closeBtn {position:absolute; top:7px; right:7px; background:url(/source/images/closeBtn.gif) no-repeat; width:22px; height:22px;}
@@ -723,7 +726,7 @@ body { background:#000; font-size:12px; font-family:"Droid Sans";-webkit-text-si
       font-family: Helvetica;      
    }
   .quickship_banner_black {
-      background-color: #000000; 
+      background-color: #000; 
       padding:0; 
       height:168px;
       width:651px; 

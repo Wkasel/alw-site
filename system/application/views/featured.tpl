@@ -13,7 +13,7 @@ function getFile(select_name) {
 {/literal}
 </script>
 <div class="bread"> <!-- bread crumbs -->
-	<a href="/content/products/" style="color:#FFF;">FEATURED PRODUCTS</a> / {$product->p_name}
+	<a href="/content/products/" style="color:#000;">FEATURED PRODUCTS</a> / {$product->p_name}
 </div> <!-- end bread crumbs -->
 <div class="clearfix">
 	<div class="phots">
@@ -88,8 +88,8 @@ function getFile(select_name) {
 		{else}
 			{assign var="prev" value=0}
 		{/if} 
-		<div style="font-weight:bold; float:right; color:#fff; margin-right:32px; margin-top:90px; font-size:13px;">
-			{if $page > 1}&nbsp;<a style="color:#FFF;" href="/content/featured_show/1/"><<</a>&nbsp;&nbsp;<a style="color:#FFF;" href="/content/featured_show/{$prev}/"><</a>{/if}
+		<div style="font-weight:bold; float:right; color:#000; margin-right:32px; margin-top:90px; font-size:13px;">
+			{if $page > 1}&nbsp;<a style="color:#000;" href="/content/featured_show/1/"><<</a>&nbsp;&nbsp;<a style="color:#000;" href="/content/featured_show/{$prev}/"><</a>{/if}
 			{assign var="no_dots" value="yes"}
 			{section name=foo start=0 loop=$total_nodes step=1}
 				{if $smarty.section.foo.iteration > 5 && $smarty.section.foo.iteration > $page+5  && $smarty.section.foo.iteration+5 < $total_nodes}
@@ -100,13 +100,13 @@ function getFile(select_name) {
 						{if $smarty.section.foo.iteration eq $page}
 							<span style="color:#FF0000">{$smarty.section.foo.iteration}</span>
 						{else}
-							<a style="color:#FFF;" href="/content/featured_show/{$smarty.section.foo.iteration}/" title="{$smarty.section.foo.iteration}">{$smarty.section.foo.iteration}</a>
+							<a style="color:#000;" href="/content/featured_show/{$smarty.section.foo.iteration}/" title="{$smarty.section.foo.iteration}">{$smarty.section.foo.iteration}</a>
 						{/if}
 					{/if}
 				{/if}
 			{/section}
-			{if $page < $total_nodes}&nbsp;<a style="color:#FFF;" href="/content/featured_show/{$next}/">></a>&nbsp;&nbsp;
-			<a style="color:#FFF;" href="/content/featured_show/{$total_nodes}/">>></a>&nbsp;&nbsp;{/if}
+			{if $page < $total_nodes}&nbsp;<a style="color:#000;" href="/content/featured_show/{$next}/">></a>&nbsp;&nbsp;
+			<a style="color:#000;" href="/content/featured_show/{$total_nodes}/">>></a>&nbsp;&nbsp;{/if}
 		</div>
 	{/if}
 </div>
