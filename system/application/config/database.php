@@ -39,7 +39,7 @@ $active_record = TRUE;
 
 
 // LOCAL
-$db['local']['hostname'] = "external-db.s100349.gridserver.com";
+$db['local']['hostname'] = "internal-db.s100349.gridserver.com";
 $db['local']['username'] = "db100349_test";
 $db['local']['password'] = "vegfc1251";
 $db['local']['database'] = "db100349_alw";
